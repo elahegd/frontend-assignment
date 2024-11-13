@@ -56,6 +56,7 @@ const filteredList = computed(() => {
         album.artist.toLowerCase().includes(lowerCaseQuery)
     );
   }
+  // can have check if filtered has length or not in order to display "no result"
   return filtered;
 });
 

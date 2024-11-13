@@ -12,21 +12,21 @@
       "year": 1973,
       "artist": "Pink Floyd",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/darksideofthemoon.png"
     },
     {
       "name": "Abbey Road",
       "year": 1969,
       "artist": "The Beatles",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/AbbeyRoad.png"
     },
     {
       "name": "Rumours",
       "year": 1977,
       "artist": "Fleetwood Mac",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/fleetedmve.png"
     },
     {
       "name": "Back in Black",
@@ -40,161 +40,161 @@
       "year": 1994,
       "artist": "Nas",
       "genre": "Hip Hop",
-      "cover": null
+      "cover": "../public/images/Illmatic.png"
     },
     {
       "name": "Enter the Wu-Tang (36 Chambers)",
       "year": 1993,
       "artist": "Wu-Tang Clan",
       "genre": "Hip Hop",
-      "cover": null
+      "cover": "../public/images/EntertheWu.png"
     },
     {
       "name": "Homework",
       "year": 1997,
       "artist": "Daft Punk",
       "genre": "Electronic",
-      "cover": null
+      "cover": "../public/images/Homework.png"
     },
     {
       "name": "Play",
       "year": 1999,
       "artist": "Moby",
       "genre": "Electronic",
-      "cover": null
+      "cover": "../public/images/play.png"
     },
     {
       "name": "The Fat of the Land",
       "year": 1997,
       "artist": "The Prodigy",
       "genre": "Electronic",
-      "cover": null
+      "cover": "../public/images/TheFato.png"
     },
     {
       "name": "Nevermind",
       "year": 1991,
       "artist": "Nirvana",
       "genre": "Grunge",
-      "cover": null
+      "cover": "../public/images/Nevermind.png"
     },
     {
       "name": "The Miseducation of Lauryn Hill",
       "year": 1998,
       "artist": "Lauryn Hill",
       "genre": "R&B",
-      "cover": null
+      "cover": "../public/images/themisedu.png"
     },
     {
       "name": "Born to Run",
       "year": 1975,
       "artist": "Bruce Springsteen",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/BorntoRun.png"
     },
     {
       "name": "Kind of Blue",
       "year": 1959,
       "artist": "Miles Davis",
       "genre": "Jazz",
-      "cover": null
+      "cover": "../public/images/KindofBlue.png"
     },
     {
       "name": "Legend",
       "year": 1984,
       "artist": "Bob Marley",
       "genre": "Reggae",
-      "cover": null
+      "cover": "../public/images/Legend.png"
     },
     {
       "name": "Blood on the Tracks",
       "year": 1975,
       "artist": "Bob Dylan",
       "genre": "Folk Rock",
-      "cover": null
+      "cover": "../public/images/BloodontheTracks.png"
     },
     {
       "name": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
       "year": 1972,
       "artist": "David Bowie",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/theriseand.png"
     },
     {
       "name": "Hunky Dory",
       "year": 1971,
       "artist": "David Bowie",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/HunkyDory.png"
     },
     {
       "name": "A Night at the Opera",
       "year": 1975,
       "artist": "Queen",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/nightatthe.png"
     },
     {
       "name": "Led Zeppelin IV",
       "year": 1971,
       "artist": "Led Zeppelin",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/LedZeppeli.png"
     },
     {
       "name": "The Wall",
       "year": 1979,
       "artist": "Pink Floyd",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/thewall.png"
     },
     {
       "name": "Hotel California",
       "year": 1976,
       "artist": "Eagles",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/HotelCalifornia.png"
     },
     {
       "name": "Purple Rain",
       "year": 1984,
       "artist": "Prince",
       "genre": "Pop",
-      "cover": null
+      "cover": "../public/images/PurpleRain.png"
     },
     {
       "name": "London Calling",
       "year": 1979,
       "artist": "The Clash",
       "genre": "Punk",
-      "cover": null
+      "cover": "../public/images/LondonCalling.png"
     },
     {
       "name": "Exile on Main St.",
       "year": 1972,
       "artist": "The Rolling Stones",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/rarities.png"
     },
     {
       "name": "What's Going On",
       "year": 1971,
       "artist": "Marvin Gaye",
       "genre": "Soul",
-      "cover": null
+      "cover": "../public/images/whats-going.png"
     },
     {
       "name": "Pet Sounds",
       "year": 1966,
       "artist": "The Beach Boys",
       "genre": "Pop",
-      "cover": null
+      "cover": "../public/images/PetSounds.png"
     },
     {
       "name": "Sgt. Pepper's Lonely Hearts Club Band",
       "year": 1967,
       "artist": "The Beatles",
       "genre": "Rock",
-      "cover": null
+      "cover": "../public/images/Sgt.Pepper.png"
     }
   ]
 }
