@@ -1,18 +1,54 @@
 <script setup>
-import { computed, ref } from "vue";
+import { computed, ref, onMounted } from "vue";
 import data from "./data/albums.json";
 import Album from "./components/Album.vue";
 import Modal from "./components/Modal.vue";
+import FilterGenre from "./components/FilterGenre.vue";
 
 const selectedAlbum = ref(null);
-
-const albums = computed(() => {
-  return data.albums.sort((a, b) => b.year - a.year);
-});
+const albums = ref(data.albums.sort((a, b) => b.year - a.year));
+const allGenre = ref([]);
+const selectedGenre = ref([]);
 
 const openAlbumModal = (_, album) => {
   selectedAlbum.value = selectedAlbum.value === album ? null : album;
-}
+};
+
+const getAllGenres = (albumsList) => {
+  const genres = [];
+  albumsList.forEach((album) => {
+    if (!genres.includes(album.genre)) genres.push(album.genre);
+  });
+  allGenre.value = genres;
+  console.log(allGenre);
+};
+
+const selectGenre = (genre) => {
+  if (genre !== null) {
+    if (!selectedGenre.value.includes(genre)) selectedGenre.value.push(genre);
+  } else {
+    selectedGenre.value = [];
+  }
+  applyFilters();
+};
+const applyFilters = () => {
+  filteredList.value;
+};
+
+const filteredList = computed(() => {
+  let filtered = [...albums.value];
+
+  if (selectedGenre.value.length) {
+    filtered = filtered.filter((album) =>
+      selectedGenre.value.includes(album.genre)
+    );
+  }
+  return filtered;
+});
+
+onMounted(() => {
+  getAllGenres(albums.value);
+});
 </script>
 
 <template>
@@ -22,10 +58,20 @@ const openAlbumModal = (_, album) => {
     <h1 class="text-3xl font-bold text-white">Albums</h1>
 
     <div
-      v-if="albums"
+      class="flex lg:flex-row sm:flex-col gap-2 bg-white shadow p-6 dark:bg-slate-800 rounded-md mt-4"
+    >
+      <FilterGenre :allGenre="allGenre" @selectGenre="selectGenre" />
+    </div>
+
+    <div
+      v-if="filteredList"
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-3"
     >
-      <div v-for="(album, index) in albums" :key="index" class="cursor-pointer">
+      <div
+        v-for="(album, index) in filteredList"
+        :key="index"
+        class="cursor-pointer"
+      >
         <Album :albumItem="album" @open="openAlbumModal" />
       </div>
     </div>
@@ -39,6 +85,5 @@ const openAlbumModal = (_, album) => {
       :cover="selectedAlbum?.cover"
       @close="openAlbumModal"
     />
-
   </div>
 </template>
