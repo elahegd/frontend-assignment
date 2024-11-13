@@ -5,7 +5,7 @@ import Album from './Album.vue';
 describe('Album.vue', () => {
   const albumItem = {
     name: 'Test Album',
-    year: '2023',
+    year: 2023,
     artist: 'Test Artist',
     cover: 'https://placehold.co/500x500/png',
   }
@@ -19,7 +19,7 @@ describe('Album.vue', () => {
     expect(wrapper.find('p').text()).toContain(albumItem.year);
     expect(wrapper.find('p').text()).toContain(albumItem.artist);
     expect(wrapper.find('img').attributes('src')).toBe(albumItem.cover);
-  })
+  });
 
   it('display a placeholder image if cover image is null', () => {
     const wrapper = mount(Album, {
@@ -27,5 +27,16 @@ describe('Album.vue', () => {
     });
 
     expect(wrapper.find('img').attributes('src')).toBe('https://placehold.co/300x300/png');
-  })
+  });
+
+  it('emits event when albumItem has clicked', async () => {
+    const wrapper = mount(Album, {
+      props: { albumItem },
+    });
+
+    await wrapper.trigger('click');
+
+    expect(wrapper.emitted().open).toBeTruthy();
+    expect(wrapper.emitted().open[0]).toEqual([expect.any(Event),albumItem]);
+  });
 })

@@ -7,12 +7,14 @@ defineProps({
     cover: String | null,
   },
 });
+
 </script>
 
 <template>
   <div
     class="flex items-center gap-2 bg-white text-black p-4 rounded-lg shadow-lg transform transition duration-200 hover:scale-105 cursor-pointer"
-  >
+    @click="$emit('open', $event, albumItem)"
+    >
     <img
       class="rounded-full bg-gray-50 w-1/3"
       :src="
